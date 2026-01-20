@@ -47,6 +47,8 @@ jobs:
         with:
           mode: fix
           fix_mode: all
+          token: ${{ secrets.SEAL_TOKEN }}
+          project: workflows
 
       - name: 'Generate Readme'
         run: |-

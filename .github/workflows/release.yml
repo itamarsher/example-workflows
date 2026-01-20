@@ -46,6 +46,8 @@ jobs:
         with:
           mode: fix
           fix_mode: all
+          token: ${{ secrets.SEAL_TOKEN }}
+          project: workflows
 
       - name: 'Checkout Starter Workflows'
         uses: 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' # ratchet:actions/checkout@v4
